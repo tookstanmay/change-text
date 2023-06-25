@@ -1,24 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import About from "./components/About";
+import Alert from "./components/Alert";
+import BottomNav from "./components/BottomNav";
+import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
+import TextForms from "./components/TextForms";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  // false -> light
+  // true -> dark
+
+  const [mode, setMode] = useState(false);
+  const [alert, setAlert] = useState(null);
+
+  const showAlert = (message, type) => {
+    setAlert({
+      msg: message,
+      type: type,
+    });
+
+    setTimeout(() => {
+      setAlert(null);
+    }, 2000);
+  };
+
+  const toggleMode = () => {
+    if (mode === false) {
+      // presentState: "light mode" entering into "dark mode"
+      setMode(true);
+    } else {
+      // presentState: "dark mode" entering into "light mode"
+      setMode(false);
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Router>
+        <div
+          className={`App bg-${mode === false ? "light" : "dark"} text-${
+            mode === false ? "dark" : "light"
+          }`}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Navbar title="changeTexts" mode={mode} toggleMode={toggleMode} />
+          <Alert alert={alert} />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<TextForms mode={mode} showAlert={showAlert} />}
+            />
+
+            <Route exact path="/about" element={<About mode={mode} />} />
+            <Route exact path="/contact" element={<Contact mode={mode} />} />
+          </Routes>
+          <BottomNav mode={mode} />
+        </div>
+      </Router>
+    </>
   );
 }
 

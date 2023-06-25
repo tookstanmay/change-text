@@ -1,13 +1,134 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #212529; */
+  -webkit-tap-highlight-color: transparent;
+}
+nav{
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.light-nav{
+  /* background-color: #cde6ff; */
+  background-color: #AFD3E2;
+  color: navy;
+}
+
+.dark-nav{
+  /* background-color: rgb(31, 32, 38); */
+  background-color: #27374D;
+  color: whitesmoke;
+}
+
+.App{
+  min-height: 100vh;
+  transition: 0.5s;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.text-left{
+  text-align: left;
+}
+
+textarea{
+  color: rgb(213, 213, 213) !important;
+  border-radius: 10px !important;
+  outline: 3px solid rgba(92, 195, 255, 0.727) !important;
+  border: none !important;
+  transition: 0.5s !important;
+}
+
+.toolkit-box{
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+.my-textarea::placeholder{
+  color: #8e8e8e;
+}
+.my-textarea:focus{
+  transition: 0.5s !important;
+  outline: 3px solid rgba(97, 92, 255, 0.442) !important;
+}
+
+.content-box{
+  margin-top: 20px;
+}
+.copy-to-clipboard{
+  height: 20px;
+  cursor: pointer;
+}
+.img-box{
+  border: 2px solid #6c6c6c;
+  height: 38px;
+  width: 38px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 40px;
+  /* right: -40px; */
+}
+.toolkit{
+  position: relative;
+  border: 1px solid #474748;
+  padding: 5px;
+  width: 120px;
+  right: 70px;
+  bottom: 50px;
+  border-radius: 8px;
+  z-index: 2;
+  visibility: hidden;
+  transition: 1s;
+}
+
+.toolkit-box:active .toolkit{
+  visibility: visible !important;
+  transition: 1s !important;
+}
+
+.play-button{
+  height: 20px;
+  margin: 5px 10px 10px 30px;
+}
+
+footer{
+  height: 70px;
+}
+.footer-dark{
+  background-color: rgba(47, 53, 79, 0.742);
+}
+.footer-light{
+  background-color: #7A3E3E;
+}
+
+.my-btn{
+  width: 120px;
+}
+
+#bottomNav{
+  height: 60px;
+}
+.bottomNav-light{
+  background-color: #AFD3E2;
+}
+.bottomNav-dark{
+  background-color: #27374D;
+}
+
+.bottomNavBtns{
+  height: 24px;
+  margin: 0 30px;
 }
