@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Visit here: [changeTexts](https://change-text-indol.vercel.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies used:
+  * __React JS__
+  * __Bootstrap__
 
-## Available Scripts
+## Information about __changeTexts__   
+'changeTexts' is a versatile web application designed to manipulate text in various ways, providing users with an array of useful features. With its intuitive and user-friendly interface, the application allows users to easily modify their text as per their requirements.
 
-In the project directory, you can run:
+Key Features:
+  * __Text Transformation__: Users can easily apply different transformations to their texts, such as capitalizing the first letter of each word, converting the entire text to uppercase, or changing it to lowercase. This ensures that users can quickly format their text in the desired style without any hassle.
+  * __Clear and Retrieve Data__: 'changeTexts' comes with a convenient 'Clear' function, allowing users to wipe out the current text content with a single click. Moreover, the application also offers a unique 'Retrieve Recent Lost Data' feature, which comes in handy if users accidentally clear their texts and want to recover them.
+  * __Text-to-Speech (TTS)__: The application is equipped with a powerful Text-to-Speech feature, enabling users to hear the transformed text spoken aloud. This feature is particularly useful for users who prefer an auditory experience or need to listen to the text instead of reading it.
+  * __Copy Functionality__: To enhance usability and convenience, 'changeTexts' provides a straightforward 'Copy' option. Users can easily copy the transformed text to their clipboard, allowing them to paste it elsewhere, such as in documents, emails, or social media posts, with just a few clicks.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall, 'changeTexts' is a user-friendly and efficient web application that offers a range of text manipulation capabilities, from simple formatting changes to retrieving lost data, all complemented by a Text-to-Speech feature and easy-to-use copying functionality. Whether it's for personal or professional use, 'changeTexts' empowers users to effortlessly handle and customize their textual content, saving time and effort in the process.
